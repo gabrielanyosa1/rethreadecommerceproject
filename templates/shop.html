@@ -1,0 +1,146 @@
+{% extends "base.html" %}
+
+{% block title %}Shop - RETHREAD{% endblock %}
+
+{% block content %}
+<!-- Shop Header -->
+<section class="shop-header py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h1 class="display-4 fw-bold mb-4">Shop Sustainable</h1>
+                <p class="lead mb-4">Discover quality second-hand items at student-friendly prices.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Filter Section -->
+<section class="filters py-4 bg-light">
+    <div class="container">
+        <div class="row g-3">
+            <!-- Search Bar -->
+            <div class="col-12 mb-3">
+                <input type="text" class="form-control search-input" placeholder="Search items...">
+            </div>
+            <div class="col-md-3">
+                <select class="form-select category-filter">
+                    <option value="all">All Categories</option>
+                    <option value="clothing">Clothing</option>
+                    <option value="books">Books</option>
+                    <option value="furniture">Furniture</option>
+                    <option value="appliances">Appliances</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <select class="form-select condition-filter">
+                    <option value="all">All Conditions</option>
+                    <option value="like-new">Like New</option>
+                    <option value="excellent">Excellent</option>
+                    <option value="good">Good</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <select class="form-select price-filter">
+                    <option value="all">Price Range</option>
+                    <option value="0-25">$0 - $25</option>
+                    <option value="25-50">$25 - $50</option>
+                    <option value="50-100">$50 - $100</option>
+                    <option value="100+">$100+</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Products Grid -->
+<section class="products py-5">
+    <div class="container">
+        <div class="row g-4">
+            <!-- Vintage Denim Collection -->
+            <div class="col-md-4 col-lg-3 product-card" data-category="clothing" data-title="Vintage Denim Collection">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1612423284934-2850a4ea6b0f" class="card-img-top" alt="Vintage Clothing">
+                    <div class="card-body">
+                        <span class="badge brand-badge mb-2">Like New</span>
+                        <h5 class="card-title">Vintage Denim Collection</h5>
+                        <p class="card-text text-muted">Classic style, barely worn. Perfect for casual outings.</p>
+                        <p class="h5 mb-3">$25</p>
+                        <button class="btn btn-primary w-100">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Campus Casual Wear -->
+            <div class="col-md-4 col-lg-3 product-card" data-category="clothing" data-title="Campus Casual Wear">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105" class="card-img-top" alt="Student Fashion">
+                    <div class="card-body">
+                        <span class="badge brand-badge mb-2">Excellent</span>
+                        <h5 class="card-title">Campus Casual Wear</h5>
+                        <p class="card-text text-muted">Perfect for campus life. Comfortable and stylish.</p>
+                        <p class="h5 mb-3">$15</p>
+                        <button class="btn btn-primary w-100">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Eco-Friendly Accessories -->
+            <div class="col-md-4 col-lg-3 product-card" data-category="accessories" data-title="Eco-Friendly Accessories">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3" class="card-img-top" alt="Sustainable Fashion">
+                    <div class="card-body">
+                        <span class="badge brand-badge mb-2">Good</span>
+                        <h5 class="card-title">Eco-Friendly Accessories</h5>
+                        <p class="card-text text-muted">Sustainable accessories for eco-conscious students.</p>
+                        <p class="h5 mb-3">$10</p>
+                        <button class="btn btn-primary w-100">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Designer Bags -->
+            <div class="col-md-4 col-lg-3 product-card" data-category="accessories" data-title="Designer Bags">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea" class="card-img-top" alt="Designer Bags">
+                    <div class="card-body">
+                        <span class="badge brand-badge mb-2">Like New</span>
+                        <h5 class="card-title">Designer Bags</h5>
+                        <p class="card-text text-muted">Premium designer bags at student-friendly prices.</p>
+                        <p class="h5 mb-3">$30</p>
+                        <button class="btn btn-primary w-100">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Winter Collection -->
+            <div class="col-md-4 col-lg-3 product-card" data-category="clothing" data-title="Winter Collection">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1445205170230-053b83016050" class="card-img-top" alt="Winter Collection">
+                    <div class="card-body">
+                        <span class="badge brand-badge mb-2">Excellent</span>
+                        <h5 class="card-title">Winter Collection</h5>
+                        <p class="card-text text-muted">Stay warm and stylish with our winter essentials.</p>
+                        <p class="h5 mb-3">$20</p>
+                        <button class="btn btn-primary w-100">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vintage Accessories -->
+            <div class="col-md-4 col-lg-3 product-card" data-category="accessories" data-title="Vintage Accessories">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27" class="card-img-top" alt="Vintage Accessories">
+                    <div class="card-body">
+                        <span class="badge brand-badge mb-2">Good</span>
+                        <h5 class="card-title">Vintage Accessories</h5>
+                        <p class="card-text text-muted">Classic accessories with timeless appeal.</p>
+                        <p class="h5 mb-3">$15</p>
+                        <button class="btn btn-primary w-100">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
