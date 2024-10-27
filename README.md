@@ -72,7 +72,7 @@ This platform is by students, for students, encouraging a more sustainable lifes
 
 5. Run the application:
    ```bash
-   python main.py
+   python3 main.py
    ```
 
 6. Open a web browser and go to `http://127.0.0.1:*` to view the application.
