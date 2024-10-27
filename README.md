@@ -98,7 +98,7 @@ This project can be deployed on **Render** for hosting a Python Flask applicatio
 ## Features
 
 - **E-commerce Functionality**: Provides a core online shopping experience for students.
-- **Theming**: Dark mode and color themes for a modern UI.
+- **Theming**: Light theme for a modern UI.
 - **Interactive Animations**: Engages users with smooth transitions and animations.
 - **Newsletter Integration**: Allows users to subscribe and stay updated.
 
